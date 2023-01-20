@@ -19,6 +19,12 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { CommonModule } from '@angular/common';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { BaseComponent } from './layout/base/base.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { HomeComponent } from './pages/home/home.component';
 
 const MaterialImports = [
   MatIconModule,
@@ -39,7 +45,15 @@ const PrimeImports = [
 ];
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    BaseComponent,
+    LoginComponent,
+    RegisterComponent,
+    HomeComponent,
+  ],
   imports: [
     BrowserModule,
     PrimeImports,
